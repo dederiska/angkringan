@@ -108,7 +108,7 @@ class Auth extends CI_Controller
 			$this->load->view('Auth/v_lupa_password');
 		} else {
 			$email = $this->input->post('email');
-			$user = $this->db->get_where('t_user', ['email' => $email])->row_array();
+			$user = $this->db->get_where('user', ['email' => $email])->row_array();
 
 			if ($user) {
 				//INPUT TOKEN
@@ -118,7 +118,7 @@ class Auth extends CI_Controller
 					'token' => $token,
 					'date_created' => time()
 				];
-				$this->db->insert('t_token', $user_token);
+				$this->db->insert('token', $user_token);
 				$this->_setEmail($token, 'forgot');
 				notif('Please check email to reset your password', false);
 				redirect(base_url('Auth/forgotPassword'));
