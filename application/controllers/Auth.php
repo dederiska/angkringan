@@ -118,7 +118,7 @@ class Auth extends CI_Controller
 					'token' => $token,
 					'date_created' => time()
 				];
-				$this->db->insert('token', $user_token);
+				$this->db->insert('tokens', $user_token);
 				$this->_setEmail($token, 'forgot');
 				notif('Please check email to reset your password', false);
 				redirect(base_url('Auth/forgotPassword'));
