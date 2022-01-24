@@ -1,13 +1,13 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',	//localhost
-	'username' => 'root',			// root
-	'password' => '',			// (kosongkan)
+	'hostname' => 'db4free.net',	//localhost
+	'username' => 'angkringan',			// root
+	'password' => 'angkringan',			// (kosongkan)
 	'database' => 'angkringan',			// nama database
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
