@@ -170,7 +170,7 @@ class Auth extends CI_Controller
 		$user = $this->db->get_where('user', ['email' => $email])->row_array();
 
 		if ($user) {
-			$user_token = $this->db->get_where('t_token', ['token' => $token])->row_array();
+			$user_token = $this->db->get_where('tokens', ['token' => $token])->row_array();
 			if ($user_token) {
 				$this->session->set_userdata('reset_email', $email);
 				$this->changePassword();
