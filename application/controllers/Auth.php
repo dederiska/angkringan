@@ -140,7 +140,7 @@ class Auth extends CI_Controller
 			'smtp_pass' => 'angkringanmjl01',
 			'smtp_port' => '587',
 			'_smtp_auth' => TRUE,
-			'protocol' => 'smtp',
+			'protocol' => 'mail',
 			'mailtype' => 'html',
 			'send_multipart' => FALSE,
 			'charset' => 'utf-8',
