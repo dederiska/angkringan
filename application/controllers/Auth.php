@@ -167,7 +167,7 @@ class Auth extends CI_Controller
 		$email = $this->input->get('email');
 		$token = $this->input->get('token');
 
-		$user = $this->db->get_where('t_user', ['email' => $email])->row_array();
+		$user = $this->db->get_where('user', ['email' => $email])->row_array();
 
 		if ($user) {
 			$user_token = $this->db->get_where('t_token', ['token' => $token])->row_array();
