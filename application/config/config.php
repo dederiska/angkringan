@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-$config['base_url'] = 'http://localhost/SIANGK/';    //BASE_URL
+$config['base_url'] = 'https://angkringanmajalengka.herokuapp.com/';    //BASE_URL
 $config['index_page'] = ''; //index.php
 $config['uri_protocol']    = 'REQUEST_URI';
 $config['url_suffix'] = '';
