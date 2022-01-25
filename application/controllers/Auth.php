@@ -139,7 +139,7 @@ class Auth extends CI_Controller
 			'smtp_user' => 'a9bc3a121d743f',
 			'smtp_pass' => '35a3f6634253b0',
 			'smtp_port' => '587',
-			'_smtp_auth' => TRUE,
+			'_smtp_auth' => 'plain',
 			'smtp_crypto' => 'tls',
 			'newline' => "\r\n"
 		];
