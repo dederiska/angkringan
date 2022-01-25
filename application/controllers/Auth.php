@@ -135,9 +135,9 @@ class Auth extends CI_Controller
 		$config = [
 			'protocol' => 'smtp',
 			// 'smtp_host' => 'ssl://smtp.googlemail.com',
-			'smtp_host' => 'smtp.gmail.com',
-			'smtp_user' => 'angkringanmajalengka@gmail.com',
-			'smtp_pass' => 'angkringanmjl01',
+			'smtp_host' => 'smtp.mailtrap.io',
+			'smtp_user' => 'a9bc3a121d743f',
+			'smtp_pass' => '35a3f6634253b0',
 			'smtp_port' => '587',
 			'_smtp_auth' => TRUE,
 			'protocol' => 'mail',
@@ -146,8 +146,6 @@ class Auth extends CI_Controller
 			'charset' => 'utf-8',
 			'wordwrap' => TRUE,
 			'smtp_crypto' => 'ssl',
-			'mailtype' => 'html',
-			'charset' => 'utf-8',
 			'newline' => "\r\n"
 		];
 
