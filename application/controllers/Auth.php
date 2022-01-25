@@ -134,13 +134,11 @@ class Auth extends CI_Controller
 		$this->load->library('encrypt');
 		$config = [
 			'protocol' => 'smtp',
-			// 'smtp_host' => 'ssl://smtp.googlemail.com',
 			'smtp_host' => 'smtp.mailtrap.io',
 			'smtp_user' => 'a9bc3a121d743f',
 			'smtp_pass' => '35a3f6634253b0',
-			'smtp_port' => '587',
-			'_smtp_auth' => 'plain',
-			'smtp_crypto' => 'tls',
+			'smtp_port' => '2525',
+			'crlf' => "\r\n",
 			'newline' => "\r\n"
 		];
 
