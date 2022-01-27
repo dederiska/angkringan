@@ -137,7 +137,7 @@ class Auth extends CI_Controller
 			'useragent' => 'Codeigniter',
 			'protocol' => "smtp",
 			'mailtype' => "html",
-			'smtp_host' => "ssl://smtp.gmail.com", //pengaturan smtp
+			'smtp_host' => "smtp.gmail.com", //pengaturan smtp -> ssl://smtp.gmail.com
 			'smtp_port' => "465",
 			'smtp_timeout' => "5",
 			'smtp_user' => "cresyensianaangel@gmail.com", // isi dengan email kamu
