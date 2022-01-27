@@ -133,17 +133,22 @@ class Auth extends CI_Controller
 	{
 		$this->load->library('encrypt');
 		$config = [
-			'protocol' => 'smtp',
-			'smtp_host' => 'smtp.mailtrap.io',
-			'smtp_user' => 'a9bc3a121d743f',
-			'smtp_pass' => '35a3f6634253b0',
-			'smtp_port' => '2525',
+			'charset' => 'utf-8',
+			'useragent' => 'Codeigniter',
+			'protocol' => "smtp",
+			'mailtype' => "html",
+			'smtp_host' => "ssl://smtp.gmail.com", //pengaturan smtp
+			'smtp_port' => "465",
+			'smtp_timeout' => "5",
+			'smtp_user' => "cresyensianaangel@gmail.com", // isi dengan email kamu
+			'smtp_pass' => "Majalengka767", // isi dengan password kamu
 			'crlf' => "\r\n",
-			'newline' => "\r\n"
+			'newline' => "\r\n",
+			'wordwrap' => TRUE
 		];
 
 		$this->load->library('email', $config);
-		$this->email->from('angkringanmajalengka@gmail.com', 'Angkringan Majalengka');
+		$this->email->from('cresyensianaangel@gmail.com', 'Angkringan Majalengka');
 		$this->email->to($this->input->post('email'));
 
 		if ($type == 'forgot') {
