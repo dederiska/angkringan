@@ -129,7 +129,7 @@ class Auth extends CI_Controller
 		}
 	}
 	//CONFIGURASI EMAIL
-	private function _setEmail()
+	public function _setEmail($token, $type)
 	{
 		$this->form_validation->set_rules('email', 'Email', 'required|valid_email|trim');
 		if ($this->form_validation->run()) {
@@ -146,7 +146,7 @@ class Auth extends CI_Controller
 				$config['useragent'] = 'Codeigniter';
 				$config['protocol'] = "mail";
 				$config['mailtype'] = "html";
-				$config['smtp_host'] = "ssl://smtp.gmail.com"; //pengaturan smtp
+				$config['smtp_host '] = "ssl://smtp.googlemail.com"; //pengaturan smtp
 				$config['smtp_port'] = "465";
 				$config['smtp_timeout'] = "5";
 				$config['smtp_user'] = "cresyensianaangeline@gmail.com"; // isi dengan email kamu
