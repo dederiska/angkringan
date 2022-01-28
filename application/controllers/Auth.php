@@ -149,8 +149,8 @@ class Auth extends CI_Controller
 				$config['smtp_host'] = "ssl://smtp.gmail.com"; //pengaturan smtp
 				$config['smtp_port'] = "465";
 				$config['smtp_timeout'] = "5";
-				$config['smtp_user'] = "xxx@gmail.com"; // isi dengan email kamu
-				$config['smtp_pass'] = "xxxx"; // isi dengan password kamu
+				$config['smtp_user'] = "cresyensianaangeline@gmail.com"; // isi dengan email kamu
+				$config['smtp_pass'] = "Majalengka767"; // isi dengan password kamu
 				$config['crlf'] = "\r\n";
 				$config['newline'] = "\r\n";
 				$config['wordwrap'] = TRUE;
