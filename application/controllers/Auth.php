@@ -144,7 +144,7 @@ class Auth extends CI_Controller
 				$config = array();
 				$config['charset'] = 'utf-8';
 				$config['useragent'] = 'Codeigniter';
-				$config['protocol'] = "smtp";
+				$config['protocol'] = "mail";
 				$config['mailtype'] = "html";
 				$config['smtp_host'] = "ssl://smtp.gmail.com"; //pengaturan smtp
 				$config['smtp_port'] = "465";
