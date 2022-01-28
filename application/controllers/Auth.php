@@ -135,6 +135,7 @@ class Auth extends CI_Controller
 		if ($this->form_validation->run()) {
 
 			$email = $this->input->post('email');
+			$this->load->helper('string');
 			$reset_key =  random_string('alnum', 50);
 
 			if ($this->reset_m->update_reset_key($email, $reset_key)) {
